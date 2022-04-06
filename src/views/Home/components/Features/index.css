@@ -1,0 +1,16 @@
+.features-about {
+  background-color: #eee;
+}
+.features-title {
+  position: relative;
+}
+.features-title::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -5px;
+  height: 5px;
+  width: 100%;
+  border-radius: 1rem;
+  background-color: #ff70a6;
+}

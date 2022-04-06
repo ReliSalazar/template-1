@@ -1,0 +1,23 @@
+.link {
+  position: relative;
+  color: #555;
+  transition: color 0.35s ease;
+}
+.link:hover,
+.active {
+  color: black;
+}
+.link::after {
+  position: absolute;
+  content: "";
+  background-color: #ff70a6;
+  left: 0;
+  bottom: -2px;
+  height: 3px;
+  width: 0;
+  border-radius: 1rem;
+  transition: width 0.35s ease;
+}
+.link:hover::after {
+  width: 100%;
+}
